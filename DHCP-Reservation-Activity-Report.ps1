@@ -43,10 +43,6 @@ function Import-DhcpAuditLogs {
 }
 
 function Find-DhcpReservationStatus {
-  param (
-    [Switch]$CheckOnlineState
-  )
-  
   $LocalServer = $env:COMPUTERNAME
   
   Write-Verbose "Getting DHCP Server Reservation Activity for server $LocalServer"
